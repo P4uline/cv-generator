@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cv>
+	<parameters>
+        <colors>
+            <skills>rgb(244,253,165)</skills>
+            <hobbies>rgb(239,202,163)</hobbies>
+            <exp>rgb(233,234,236)</exp>
+            <exp-tasks>rgb(243,243,244)</exp-tasks>
+            <studies>rgb(245,218,129)</studies>
+        </colors>
+        <taillePolice>
+            <big>18</big>
+            <medium>10</medium>
+            <small>6</small>
+        </taillePolice>
+        <bordureTableau>0.5pt solid black</bordureTableau>
+    </parameters>
+   	<candidat>
+   		<name>Pauline Iogna</name>
+   		<photo>../pictures.pauline-iogna.jpg</photo>
+		<email>pauline.iogna@gmail.com</email>
+ 		<tel>0623161214</tel>
+   	</candidat>
+		
+   	<title>Ingénieur d'études et développement java/EE</title>
+
+	<skillsTechnical>
+		<title>Compétences techniques</title>
+		<content>
+			<category>Langages</category>
+			<value>Java/J2EE</value>
+			<value>Javascript</value>
+			<value>C</value>
+			<value>C++</value>
+		</content>
+		<content>
+			<category>Bases de données relationelles</category>
+			<value>Oracle</value>
+			<value>Db2</value>
+			<value>Mysql</value>
+		</content>
+		<content>
+			<category>Frameworks</category>
+			<value>Maven</value>
+			<value>Hibernate</value>
+			<value>Spring</value>
+			<value>Rest easy</value>
+			<value>Struts 2</value>
+		</content>
+		<content>
+			<category>Web</category>
+			<value>Css</value>
+			<value>JQuery</value>
+			<value>Angular</value>
+			<value>Bootstrap</value>
+		</content>
+		<content>
+			<category>Gestion de versions</category>
+			<value>Git</value>
+			<value>Svn</value>
+		</content>
+		<content>
+			<category>IDE</category>
+			<value>Eclipse</value>
+			<value>IntelliJ</value>
+		</content>
+		<content>
+			<category>Os</category>
+			<value>Windows</value>
+			<value>Linux</value>
+			<value>MacOs</value>
+		</content>
+		<content>
+			<category>Méthodes</category>
+			<value>Scrum</value>
+			<value>Kanban</value>
+		</content>
+		<content>
+			<category>Nosql</category>
+			<value>Mongodb</value>
+			<value>Aggregation pipeline</value>
+			<value>Map/Reduce</value>
+			<value>Jongo</value>
+		</content>
+		<content>
+			<category>Tests</category>
+			<value>Tests unitaires</value>
+			<value>Tests d'intégration</value>
+			<value>Mockito</value>
+			<value>Fest assert</value>
+			<value>Junit</value>
+			<value>Testng</value>
+		</content>
+		<content>
+			<category>Architecture</category>
+			<value>Rest</value>
+			<value>Guice</value>
+			<value>Proxy</value>
+			<value>Asynchronisation</value>
+		</content>
+	</skillsTechnical>
+
+	<skillsTheorical>
+		<title>Compétences théoriques</title>
+		<skill-th-container>
+			<skill-th>Algorithmes de tri</skill-th>
+			<skill-th>Analyse de la compéxité du code source</skill-th>
+			<skill-th>Structure de données algorithmique</skill-th>
+		</skill-th-container>
+	</skillsTheorical>
+	
+	<hobbies>
+		<title>Veille technologique et diverses activités</title>
+		<content>
+			<category>Participation speaker</category>
+			<value>Soirée scalabilité Duchess Jug</value>
+			<value>Devoxx France 2014</value>
+			<value>Human talks</value>
+		</content>
+		<content>
+			<category>Participation spéctateur</category>
+			<value>Paris Jug</value>
+			<value>Dot scale</value>
+			<value>Devoxx</value>
+			<value>Human talks</value>
+			<value>Duchess Jug</value>
+			<value>Hackergarten france</value>
+		</content>
+		<content>
+			<category>Groupes</category>
+			<value>Mongodb User Group</value>
+			<value>Duchess France</value>
+		</content>
+		<content>
+			<category>Développement</category>
+			<value>Génération du CV en PDF à partir de transformations xslt, Fop, Xsl-Fo</value>
+		</content>
+	</hobbies>
+		
+	<experiences>
+		<title>Expérience professionnelle</title>
+		<experience>
+			<duration>
+				<from>Janv 2014</from>
+				<to>à auj.</to>
+			</duration>
+			<where>UPEM</where>
+			<what>Enseignant vacataire à l'université</what>
+			<presentation>Encadrement d'un TD d'algorithmique pour les étudiants en 1ère année de licence Mathématiques et Informatique ainsi qu'un TP de programmation C pour les étudiants en 2ème année.</presentation>
+		</experience>
+		<experience>
+			<duration>
+				<from>Janv 2012</from>
+				<to>à auj.</to>
+			</duration>
+			<where>Connecthings</where>
+			<what>Ingénieur d'études et développement</what>
+			<presentation>
+				Développement de l’application Adtag :
+		        	Adtag est une plateforme permettant au client de gérer ses réseaux de tag Nfc. Chaque client a un compte avec des droits et des rôles qui lui sont attribués.
+		    </presentation>
+		    <tasks>
+		    	<task>Déclanchement de triggers</task>
+	        	<task>Module d'alertes mail envoyées sur évenements ou date limites</task>
+				<task>Migration d'un module de statistiques</task>
+				<task>Développement d'un générateur de requètes mongodb pour le module de statistiques</task>
+				<task>Tests unitaires et tests d'intégrations</task>
+				<task>Intégration continue</task>
+				<task>Développement de services REST</task>
+		    </tasks>
+		    <skills>
+		    	<value>Linux mint</value>
+		    	<value>Eclipse</value>
+		    	<value>Java/J2EE</value>
+		    	<value>REST</value>
+		    	<value>RestEasy</value>
+		    	<value>JAX-RS</value>
+		    	<value>Guice</value>
+		    	<value>NoSql</value>
+		    	<value>Mongosdb</value>
+		    	<value>Jongo</value>
+		    	<value>Aggregation pipeline</value>
+		    	<value>Play-framework 1.2.5</value>
+		    	<value>Angular</value>
+		    	<value>Bootstrap</value>
+		    	<value>Junit</value>
+		    	<value>Testng</value>
+		    	<value>Mockito</value>
+		    	<value>Fest assert</value>
+		    	<value>Quartz scheduler</value>
+		    </skills>
+		</experience>
+		
+		<experience>
+        	<duration>
+        		<from>Mai 2011</from>
+        		<to> - Déc. 2011</to>
+        	</duration>
+		    <what>Ingénieur d'études et développement</what>
+		    <where>Alti/PSA</where>
+		    <presentation>Développement de l’application ROCADE Monitoring : Conception, modélisation UML, réalisation de développements java/J2EE. Rocade Monitoring est le premier projet se basant sur un socle technique (sur lequel se baseront d’autre futurs projets). Ce projet est un projet-exemple sur lequel la mise en place de tests unitaires, la gestion des exceptions, un découplage maximum et l’application de toutes les bonnes pratiques de développement est demandé.</presentation>
+		    <presentation>EAI ROCADE Central : Maintenance corrective et pilotage de mise en place de flux. ROCADE Central est un EAI par lequel des dizaines d’applications communiquent. Un énorme travail de coordination avec les chefs de projets utilisateur de ROCADE est nécessaire pour mettre en place la moindre action. Les applications passant par ROCADE font passer des messages de la chaine de fabrication, ce qui en fait une application très critique.</presentation>
+		    <tasks>
+		    	<task>Conception, modélisation UML</task>
+				<task>Mise en place de génération de code java et SQL</task>
+				<task>Mapping hibernate</task>
+				<task>Développement Java/J2EE</task>
+				<task>Mise en place de la stratégie de tests sur le projet ROCADE Monitoring</task>
+				<task>Responsable des tests unitaires : développement, documentation, coaching</task>
+				<task>Prise en compte d’incidents éventuels</task>
+				<task>Pilotage technique de mise en place de flux</task>
+		    </tasks>
+		    <skills>
+		    	<value>Eclipse</value>
+		    	<value>Java/J2EE</value>
+		    	<value>Spring</value>
+		    	<value>Struts</value>
+		    	<value>Oracle 10g</value>
+		    	<value>Hibernate</value>
+		    	<value>IReport</value>
+		    	<value>SDI</value>
+		    	<value>Web Service</value>
+		    	<value>MQSeries</value>
+		    	<value>MQExplorer</value>
+		    	<value>Websphere Message Broker Toolkit</value>
+		    </skills>
+		</experience>
+		
+		<experience>
+			<duration>
+	        	<from>Avril 2010</from>
+	        	<to> - Avril 2011</to>
+		    </duration>
+		    <what>Ingénieur d'études et développement</what>
+		    <where>Alti/ONF</where>
+		    <presentation>Refonte de l’application de suivi de l’activité forestière de l’ONF (Office National des Forêts) : 
+			    Gestion des forêts domaniales, communales et privées, Création et suivi des devis, Gestion des achats, Suivi des chantiers, Suivi de l’activité,
+				au sein d’une équipe de 40 personnes.
+			</presentation>
+			<tasks>
+				<task>Responsable des éditions</task>
+				<task>Développement java d'un module Unité de Suivi d'Activité</task>
+				<task>Tests d’intégration</task>
+				<task>Correction d’anomalies</task>
+			</tasks>
+			<skills>
+				<value>Eclipse</value>
+				<value>Dozer</value>
+				<value>Java/J2EE</value>
+				<value>SWT/Jface</value>
+				<value>Glassfish</value>
+				<value>Oracle 10g</value>
+				<value>Hibernate</value>
+				<value>HP Quality Center</value>
+				<value>XSL-FO</value>
+			</skills>
+		</experience>
+		<experience>
+        	<duration>
+        		<from>Mars 2009</from>
+        		<to> - Mars 2010</to>
+        	</duration>
+		    <what>Ingénieur d'études et développement</what>
+		    <where>Edifixio/Danone</where>
+		    <presentation>    
+        		Projet New Danone Wiki : Application web 2.0, site communautaire pour l'intranet de Danone (de type Facebook). Les utilisateurs peuvent rejoindre des communautés dans des « streams » administrés par les « leaders ».
+		    </presentation>
+		    <presentation>Projet New Who's Who : Extension du projet New Danone Wiki. Les utilisateurs peuvent créer des communautés dans un unique « stream ».</presentation>
+		    <tasks>
+		    	<task>Développement de services en Java</task>
+				<task>Développement de scripts SQL</task>
+				<task>Développement de requêtes Criteria (Hibernate)</task>
+				<task>Rédaction de documentations internes</task>
+				<task>Gestion de PMR (Problem Management Reports) avec IBM pour Lotus Connections</task>
+				<task>Développement d'un « log book »</task>
+				<task>Administration WebSphere, livraison et déploiement d'EAR</task>
+		    </tasks>
+		    <skills>
+		    	<value>Java/J2EE</value>
+		    	<value>Hibernate</value>
+		    	<value>Criteria</value>
+		    	<value>REST</value>
+		    	<value>DB2</value>
+		    	<value>SQL</value>
+		    	<value>Websphere</value>
+		    	<value>Apache Abdera</value>
+		    	<value>Atom</value>
+		    	<value>Lotus Connections</value>
+		    	<value>Windows XP</value>
+		    	<value>AIX</value>
+		    </skills>   
+		</experience>
+		
+		<experience>
+			<duration>
+				<from>Oct. 2007</from>
+				<to> - Sept. 2008</to>
+			</duration>
+			<where>Università degli studi di Bologna</where>
+			<what>Ingénieur d'études et développement stagiaire</what>
+			<presentation>Projet universitaire : développement d’un site internet.</presentation>
+			<skills>
+				<value>Java/J2EE</value>
+				<value>Servlets</value>
+				<value>JSP</value>
+				<value>Web Services</value>
+				<value>XML</value>
+				<value>XHTML</value>
+				<value>HTML</value>
+				<value>NetBeans</value>
+				<value>Windows XP</value>
+				<value>Linux</value>
+			</skills>
+		</experience>
+		
+		<experience>
+        	<duration><from>Mai 2007</from><to> - Sept. 2007</to></duration>
+		    <what>Ingénieur d'études et développement stagiaire</what>
+		    <where>4DConcept</where>
+		    <presentation>
+		    	Projet de CD-ROM documentaire: développement Java afin que l'application fonctionne aussi bien à partir d'un répertoire contenant la collection de fichiers HTML qu'à partir d'une archive .zip de ce répertoire.
+		    	Développement de servlets, ajout de classes et modification de classes existantes pour ajouter une fonctionnalité à l'application.
+		    </presentation>    	
+		    <presentation>Projet Doc'Advance : Mise en conformité des fichiers HTML avec la charte graphique du projet.</presentation>    	
+		    <presentation>Projet EPN site internet : Réalisation du cahier de recette de l'application à partir des spécifications fonctionnelles et des spécifications techniques.</presentation>
+			<presentation>Projet ADES : migration technologique et refonte ergonomique des CD-ROM ADES.</presentation>
+			<tasks>
+				<task>Développement de l’application</task>
+				<task>Réalisation de maquettes de collections</task>
+				<task>Mise à jour de l’atelier</task>
+				<task>Intégration du convertisseur de fichier .cqm en fichier .svg</task>
+				<task>Adaptation des feuilles de styles XSL</task>
+				<task>Réalisation du cahier de recette de l’application</task>
+				<task>Mise à jour des spécifications fonctionnelles et techniques</task>
+				<task>Tests sous les différentes plateformes</task>
+			</tasks>
+			<skills>
+				<value>Java/J2EE</value>
+				<value>Eclipse</value>
+				<value>Servlets</value>
+				<value>Librairie Apache VFS</value>
+				<value>Windows XP</value>
+				<value>XHTML</value>
+				<value>HTML</value>
+				<value>XML</value>
+				<value>JavaScript</value>
+			</skills>
+		</experience>
+	</experiences>
+	
+	<education>
+		<title>Formation</title>
+		<education-content>
+			<title>Certification</title>
+			<education-unit>
+				<when>2011</when>
+				<what>Oracle Certified Programmer for the Java 2 Platform, SE 6.0</what>
+			</education-unit>
+		</education-content>
+		<education-content>
+			<title>Formation professionnelle</title>
+			<education-unit>
+				<when>2011</when>
+				<what>Formation Spring – Valtech trainning</what>
+				<what>Formation Struts - Alti</what>
+			</education-unit>
+			<education-unit>
+				<when>2008</when>
+				<what>Formation “programmation avancée JAVA/J2EE – Atos Origin - Servlets, JSP, JavaBeans, MVC…</what>
+			</education-unit>
+		</education-content>
+		<education-content>
+			<title>Formation initiale</title>
+			<education-unit>
+				<when>2008</when>
+				<what>Master Recherche 2 Information - Université de Bologne, Italie</what>
+			</education-unit>
+			<education-unit>
+				<when>2007</when>
+				<what>Master Recherche 1 Informatique - Université Paris-Est Marne-la-Vallée</what>
+			</education-unit>
+			<education-unit>
+				<when>2005</when>
+				<what>MIAS</what>
+			</education-unit>
+			<education-unit>
+				<when>2001</when>
+				<what>Baccalauréat scientifique</what>
+			</education-unit>
+		</education-content>
+	</education>
+</cv>

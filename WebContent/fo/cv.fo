@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8"?><fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<fo:layout-master-set>
+<fo:simple-page-master reference-orientation="0" margin-right="1cm" margin-left="1cm" margin-bottom="0cm" margin-top="1cm" page-width="21cm" page-height="29.7cm" master-name="portrait">
+<fo:region-body background-color="white" background-repeat="no-repeat" margin-bottom="1cm" margin-top="0cm"/>
+<fo:region-after precedence="true" extent="1cm" region-name="bas-de-page"/>
+</fo:simple-page-master>
+<fo:simple-page-master page-width="21cm" page-height="29.7cm" master-name="page-blanche">
+<fo:region-body/>
+<fo:region-before precedence="true" extent="10cm" region-name="entete-page-blanche"/>
+<fo:region-after precedence="true" extent="1cm" region-name="bas-de-page"/>
+</fo:simple-page-master>
+<fo:page-sequence-master master-name="page-portrait">
+<fo:repeatable-page-master-alternatives>
+<fo:conditional-page-master-reference blank-or-not-blank="blank" master-reference="page-blanche"/>
+<fo:conditional-page-master-reference master-reference="portrait"/>
+</fo:repeatable-page-master-alternatives>
+</fo:page-sequence-master>
+</fo:layout-master-set>
+<fo:page-sequence master-reference="page-portrait">
+<fo:static-content flow-name="entete-page-blanche">
+<fo:block margin-top="9cm">Cette page est blanche</fo:block>
+</fo:static-content>
+<fo:static-content flow-name="bas-de-page">
+<fo:block font-size="10pt" font-family="Arial">
+<fo:table border-collapse="separate" border-top="0.5pt solid black" width="19cm" table-layout="fixed">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell>
+<fo:block>
+<fo:inline/>
+<fo:inline/>
+</fo:block>
+</fo:table-cell>
+<fo:table-cell text-align-last="right">
+<fo:block>
+<fo:inline>
+<fo:page-number/>/<fo:page-number-citation ref-id="last-block"/>
+</fo:inline>
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+</fo:static-content>
+<fo:flow color="rgb(88,88,88)" font-size="10pt" font-family="frutiger" flow-name="xsl-region-body">
+<fo:block>
+<fo:table width="19cm" table-layout="fixed">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-top="0.5cm">
+<fo:block/>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block font-size="10pt" border-collapse="separate" padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" display-align="auto" text-align="left">
+<fo:block>Pauline Iogna</fo:block>
+<fo:block/>
+<fo:block>pauline.iogna@gmail.com</fo:block>
+<fo:block>0623161214</fo:block>
+</fo:block>
+<fo:block>
+<fo:table width="19cm" table-layout="fixed">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-top="0.5cm">
+<fo:block/>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block font-weight="bold" font-size="18pt" border-collapse="separate" padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" text-align="left">
+<fo:inline text-transform="uppercase">Ingénieur d'études et développement java/EE</fo:inline>
+</fo:block>
+<fo:block>
+<fo:table width="19cm" table-layout="fixed">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-top="0.5cm">
+<fo:block/>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block font-size="20px">Compétences techniques</fo:block>
+<fo:block>
+<fo:table background-color="rgb(244,253,165)" border-color="rgb(244,253,165)" width="19cm" table-layout="fixed">
+<fo:table-column column-width="6cm"/>
+<fo:table-column column-width="13cm"/>
+<fo:table-body>
+<fo:table-row font-size="10px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" font-weight="bold" display-align="auto" text-align="left">
+<fo:block>Langages</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" display-align="auto" text-align="left">
+<fo:block>Java/J2EE - Javascript - C - C++</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row font-size="10px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" font-weight="bold" display-align="auto" text-align="left">
+<fo:block>Bases de données relationelles</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" display-align="auto" text-align="left">
+<fo:block>Oracle - Db2 - Mysql</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row font-size="10px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" font-weight="bold" display-align="auto" text-align="left">
+<fo:block>Frameworks</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" display-align="auto" text-align="left">
+<fo:block>Maven - Hibernate - Spring - Rest easy - Struts 2</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row font-size="10px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" font-weight="bold" display-align="auto" text-align="left">
+<fo:block>Web</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" display-align="auto" text-align="left">
+<fo:block>Css - JQuery - Angular - Bootstrap</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row font-size="10px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" font-weight="bold" display-align="auto" text-align="left">
+<fo:block>Gestion de versions</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" display-align="auto" text-align="left">
+<fo:block>Git - Svn</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row font-size="10px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" font-weight="bold" display-align="auto" text-align="left">
+<fo:block>IDE</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" display-align="auto" text-align="left">
+<fo:block>Eclipse - IntelliJ</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row font-size="10px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" font-weight="bold" display-align="auto" text-align="left">
+<fo:block>Os</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" display-align="auto" text-align="left">
+<fo:block>Windows - Linux - MacOs</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row font-size="10px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" font-weight="bold" display-align="auto" text-align="left">
+<fo:block>Méthodes</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" display-align="auto" text-align="left">
+<fo:block>Scrum - Kanban</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row font-size="10px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" font-weight="bold" display-align="auto" text-align="left">
+<fo:block>Nosql</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" display-align="auto" text-align="left">
+<fo:block>Mongodb - Aggregation pipeline - Map/Reduce - Jongo</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row font-size="10px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" font-weight="bold" display-align="auto" text-align="left">
+<fo:block>Tests</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" display-align="auto" text-align="left">
+<fo:block>Tests unitaires - Tests d'intégration - Mockito - Fest assert - Junit - Testng</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row font-size="10px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" font-weight="bold" display-align="auto" text-align="left">
+<fo:block>Architecture</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" display-align="auto" text-align="left">
+<fo:block>Rest - Guice - Proxy - Asynchronisation</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block>
+<fo:table width="19cm" table-layout="fixed">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-top="0.5cm">
+<fo:block/>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block font-size="20px">Veille technologique et diverses activités</fo:block>
+<fo:block>
+<fo:table background-color="rgb(239,202,163)" width="19cm" table-layout="fixed">
+<fo:table-column column-width="6cm"/>
+<fo:table-column column-width="13cm"/>
+<fo:table-body>
+<fo:table-row font-size="10px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" font-weight="bold" display-align="auto" text-align="left">
+<fo:block>Participation speaker</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" display-align="auto" text-align="left">
+<fo:block>
+<fo:block>Soirée scalabilité Duchess Jug</fo:block>
+<fo:block>Devoxx France 2014</fo:block>
+<fo:block>Human talks</fo:block>
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row font-size="10px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" font-weight="bold" display-align="auto" text-align="left">
+<fo:block>Participation spéctateur</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" display-align="auto" text-align="left">
+<fo:block>
+<fo:block>Paris Jug</fo:block>
+<fo:block>Dot scale</fo:block>
+<fo:block>Devoxx</fo:block>
+<fo:block>Human talks</fo:block>
+<fo:block>Duchess Jug</fo:block>
+<fo:block>Hackergarten france</fo:block>
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row font-size="10px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" font-weight="bold" display-align="auto" text-align="left">
+<fo:block>Groupes</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" display-align="auto" text-align="left">
+<fo:block>
+<fo:block>Mongodb User Group</fo:block>
+<fo:block>Duchess France</fo:block>
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row font-size="10px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" font-weight="bold" display-align="auto" text-align="left">
+<fo:block>Développement</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" display-align="auto" text-align="left">
+<fo:block>
+<fo:block>Génération du CV en PDF à partir de transformations xslt, Fop, Xsl-Fo</fo:block>
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block>
+<fo:table width="19cm" table-layout="fixed">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-top="0.5cm">
+<fo:block/>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" keep-with-next="always" font-size="20px">Expérience professionnelle</fo:block>
+<fo:block keep-together.within-line="0" keep-together="always">
+<fo:table background-color="rgb(233,234,236)" width="19cm" table-layout="fixed">
+<fo:table-column column-width="5cm"/>
+<fo:table-column column-width="10cm"/>
+<fo:table-column column-width="4cm"/>
+<fo:table-body>
+<fo:table-row keep-with-next="always" font-weight="bold" font-size="11px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Janv 2014 à auj.</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Enseignant vacataire à l'université</fo:block>
+</fo:table-cell>
+<fo:table-cell text-align-last="center" padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>UPEM</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" number-columns-spanned="3">
+<fo:block>
+<fo:block>Encadrement d'un TD d'algorithmique pour les étudiants en 1ère année de licence Mathématiques et Informatique ainsi qu'un TP de programmation C pour les étudiants en 2ème année.</fo:block>
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block>
+<fo:table width="19cm" table-layout="fixed">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-top="0.5cm">
+<fo:block/>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block keep-together.within-line="0" keep-together="always">
+<fo:table background-color="rgb(233,234,236)" width="19cm" table-layout="fixed">
+<fo:table-column column-width="5cm"/>
+<fo:table-column column-width="10cm"/>
+<fo:table-column column-width="4cm"/>
+<fo:table-body>
+<fo:table-row keep-with-next="always" font-weight="bold" font-size="11px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Janv 2012 à auj.</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Ingénieur d'études et développement</fo:block>
+</fo:table-cell>
+<fo:table-cell text-align-last="center" padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Connecthings</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" number-columns-spanned="3">
+<fo:block>
+<fo:block>
+				Développement de l’application Adtag :
+		        	Adtag est une plateforme permettant au client de gérer ses réseaux de tag Nfc. Chaque client a un compte avec des droits et des rôles qui lui sont attribués.
+		    </fo:block>
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell display-align="center" padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" number-columns-spanned="3">
+<fo:table keep-together="always" background-color="rgb(243,243,244)">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Déclanchement de triggers</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Module d'alertes mail envoyées sur évenements ou date limites</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Migration d'un module de statistiques</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Développement d'un générateur de requètes mongodb pour le module de statistiques</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Tests unitaires et tests d'intégrations</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Intégration continue</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Développement de services REST</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" number-columns-spanned="3">
+<fo:block font-weight="bold">
+<fo:block>Environnement technique : </fo:block>Linux mint - Eclipse - Java/J2EE - REST - RestEasy - JAX-RS - Guice - NoSql - Mongosdb - Jongo - Aggregation pipeline - Play-framework 1.2.5 - Angular - Bootstrap - Junit - Testng - Mockito - Fest assert - Quartz scheduler</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block>
+<fo:table width="19cm" table-layout="fixed">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-top="0.5cm">
+<fo:block/>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block keep-together.within-line="0" keep-together="always">
+<fo:table background-color="rgb(233,234,236)" width="19cm" table-layout="fixed">
+<fo:table-column column-width="5cm"/>
+<fo:table-column column-width="10cm"/>
+<fo:table-column column-width="4cm"/>
+<fo:table-body>
+<fo:table-row keep-with-next="always" font-weight="bold" font-size="11px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Mai 2011  - Déc. 2011</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Ingénieur d'études et développement</fo:block>
+</fo:table-cell>
+<fo:table-cell text-align-last="center" padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Alti/PSA</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" number-columns-spanned="3">
+<fo:block>
+<fo:block>Développement de l’application ROCADE Monitoring : Conception, modélisation UML, réalisation de développements java/J2EE. Rocade Monitoring est le premier projet se basant sur un socle technique (sur lequel se baseront d’autre futurs projets). Ce projet est un projet-exemple sur lequel la mise en place de tests unitaires, la gestion des exceptions, un découplage maximum et l’application de toutes les bonnes pratiques de développement est demandé.</fo:block>
+<fo:block padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px"> </fo:block>
+<fo:block>EAI ROCADE Central : Maintenance corrective et pilotage de mise en place de flux. ROCADE Central est un EAI par lequel des dizaines d’applications communiquent. Un énorme travail de coordination avec les chefs de projets utilisateur de ROCADE est nécessaire pour mettre en place la moindre action. Les applications passant par ROCADE font passer des messages de la chaine de fabrication, ce qui en fait une application très critique.</fo:block>
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell display-align="center" padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" number-columns-spanned="3">
+<fo:table keep-together="always" background-color="rgb(243,243,244)">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Conception, modélisation UML</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Mise en place de génération de code java et SQL</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Mapping hibernate</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Développement Java/J2EE</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Mise en place de la stratégie de tests sur le projet ROCADE Monitoring</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Responsable des tests unitaires : développement, documentation, coaching</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Prise en compte d’incidents éventuels</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Pilotage technique de mise en place de flux</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" number-columns-spanned="3">
+<fo:block font-weight="bold">
+<fo:block>Environnement technique : </fo:block>Eclipse - Java/J2EE - Spring - Struts - Oracle 10g - Hibernate - IReport - SDI - Web Service - MQSeries - MQExplorer - Websphere Message Broker Toolkit</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block>
+<fo:table width="19cm" table-layout="fixed">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-top="0.5cm">
+<fo:block/>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block keep-together.within-line="0" keep-together="always">
+<fo:table background-color="rgb(233,234,236)" width="19cm" table-layout="fixed">
+<fo:table-column column-width="5cm"/>
+<fo:table-column column-width="10cm"/>
+<fo:table-column column-width="4cm"/>
+<fo:table-body>
+<fo:table-row keep-with-next="always" font-weight="bold" font-size="11px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Avril 2010  - Avril 2011</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Ingénieur d'études et développement</fo:block>
+</fo:table-cell>
+<fo:table-cell text-align-last="center" padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Alti/ONF</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" number-columns-spanned="3">
+<fo:block>
+<fo:block>Refonte de l’application de suivi de l’activité forestière de l’ONF (Office National des Forêts) : 
+			    Gestion des forêts domaniales, communales et privées, Création et suivi des devis, Gestion des achats, Suivi des chantiers, Suivi de l’activité,
+				au sein d’une équipe de 40 personnes.
+			</fo:block>
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell display-align="center" padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" number-columns-spanned="3">
+<fo:table keep-together="always" background-color="rgb(243,243,244)">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Responsable des éditions</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Développement java d'un module Unité de Suivi d'Activité</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Tests d’intégration</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Correction d’anomalies</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" number-columns-spanned="3">
+<fo:block font-weight="bold">
+<fo:block>Environnement technique : </fo:block>Eclipse - Dozer - Java/J2EE - SWT/Jface - Glassfish - Oracle 10g - Hibernate - HP Quality Center - XSL-FO</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block>
+<fo:table width="19cm" table-layout="fixed">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-top="0.5cm">
+<fo:block/>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block keep-together.within-line="0" keep-together="always">
+<fo:table background-color="rgb(233,234,236)" width="19cm" table-layout="fixed">
+<fo:table-column column-width="5cm"/>
+<fo:table-column column-width="10cm"/>
+<fo:table-column column-width="4cm"/>
+<fo:table-body>
+<fo:table-row keep-with-next="always" font-weight="bold" font-size="11px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Mars 2009  - Mars 2010</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Ingénieur d'études et développement</fo:block>
+</fo:table-cell>
+<fo:table-cell text-align-last="center" padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Edifixio/Danone</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" number-columns-spanned="3">
+<fo:block>
+<fo:block>    
+        		Projet New Danone Wiki : Application web 2.0, site communautaire pour l'intranet de Danone (de type Facebook). Les utilisateurs peuvent rejoindre des communautés dans des « streams » administrés par les « leaders ».
+		    </fo:block>
+<fo:block padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px"> </fo:block>
+<fo:block>Projet New Who's Who : Extension du projet New Danone Wiki. Les utilisateurs peuvent créer des communautés dans un unique « stream ».</fo:block>
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell display-align="center" padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" number-columns-spanned="3">
+<fo:table keep-together="always" background-color="rgb(243,243,244)">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Développement de services en Java</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Développement de scripts SQL</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Développement de requêtes Criteria (Hibernate)</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Rédaction de documentations internes</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Gestion de PMR (Problem Management Reports) avec IBM pour Lotus Connections</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Développement d'un « log book »</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Administration WebSphere, livraison et déploiement d'EAR</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" number-columns-spanned="3">
+<fo:block font-weight="bold">
+<fo:block>Environnement technique : </fo:block>Java/J2EE - Hibernate - Criteria - REST - DB2 - SQL - Websphere - Apache Abdera - Atom - Lotus Connections - Windows XP - AIX</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block>
+<fo:table width="19cm" table-layout="fixed">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-top="0.5cm">
+<fo:block/>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block keep-together.within-line="0" keep-together="always">
+<fo:table background-color="rgb(233,234,236)" width="19cm" table-layout="fixed">
+<fo:table-column column-width="5cm"/>
+<fo:table-column column-width="10cm"/>
+<fo:table-column column-width="4cm"/>
+<fo:table-body>
+<fo:table-row keep-with-next="always" font-weight="bold" font-size="11px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Oct. 2007  - Sept. 2008</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Ingénieur d'études et développement stagiaire</fo:block>
+</fo:table-cell>
+<fo:table-cell text-align-last="center" padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Università degli studi di Bologna</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" number-columns-spanned="3">
+<fo:block>
+<fo:block>Projet universitaire : développement d’un site internet.</fo:block>
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" number-columns-spanned="3">
+<fo:block font-weight="bold">
+<fo:block>Environnement technique : </fo:block>Java/J2EE - Servlets - JSP - Web Services - XML - XHTML - HTML - NetBeans - Windows XP - Linux</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block>
+<fo:table width="19cm" table-layout="fixed">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-top="0.5cm">
+<fo:block/>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block keep-together.within-line="0" keep-together="always">
+<fo:table background-color="rgb(233,234,236)" width="19cm" table-layout="fixed">
+<fo:table-column column-width="5cm"/>
+<fo:table-column column-width="10cm"/>
+<fo:table-column column-width="4cm"/>
+<fo:table-body>
+<fo:table-row keep-with-next="always" font-weight="bold" font-size="11px">
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Mai 2007  - Sept. 2007</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Ingénieur d'études et développement stagiaire</fo:block>
+</fo:table-cell>
+<fo:table-cell text-align-last="center" padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>4DConcept</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" number-columns-spanned="3">
+<fo:block>
+<fo:block>
+		    	Projet de CD-ROM documentaire: développement Java afin que l'application fonctionne aussi bien à partir d'un répertoire contenant la collection de fichiers HTML qu'à partir d'une archive .zip de ce répertoire.
+		    	Développement de servlets, ajout de classes et modification de classes existantes pour ajouter une fonctionnalité à l'application.
+		    </fo:block>
+<fo:block padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px"> </fo:block>
+<fo:block>Projet Doc'Advance : Mise en conformité des fichiers HTML avec la charte graphique du projet.</fo:block>
+<fo:block padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px"> </fo:block>
+<fo:block>Projet EPN site internet : Réalisation du cahier de recette de l'application à partir des spécifications fonctionnelles et des spécifications techniques.</fo:block>
+<fo:block padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px"> </fo:block>
+<fo:block>Projet ADES : migration technologique et refonte ergonomique des CD-ROM ADES.</fo:block>
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell display-align="center" padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" number-columns-spanned="3">
+<fo:table keep-together="always" background-color="rgb(243,243,244)">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Développement de l’application</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Réalisation de maquettes de collections</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Mise à jour de l’atelier</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Intégration du convertisseur de fichier .cqm en fichier .svg</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Adaptation des feuilles de styles XSL</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Réalisation du cahier de recette de l’application</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Mise à jour des spécifications fonctionnelles et techniques</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Tests sous les différentes plateformes</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" number-columns-spanned="3">
+<fo:block font-weight="bold">
+<fo:block>Environnement technique : </fo:block>Java/J2EE - Eclipse - Servlets - Librairie Apache VFS - Windows XP - XHTML - HTML - XML - JavaScript</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block>
+<fo:table width="19cm" table-layout="fixed">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-top="0.5cm">
+<fo:block/>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block>
+<fo:table width="19cm" table-layout="fixed">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-top="0.5cm">
+<fo:block/>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" keep-with-next="always" font-size="20px">Formation</fo:block>
+<fo:table background-color="rgb(245,218,129)" padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" width="19cm">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block keep-with-next="always" font-size="15px">Certification</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell>
+<fo:block padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px"> </fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell>
+<fo:table width="19cm" table-layout="fixed">
+<fo:table-column column-width="2cm"/>
+<fo:table-column column-width="17cm"/>
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>2011</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Oracle Certified Programmer for the Java 2 Platform, SE 6.0</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+<fo:block>
+<fo:table width="19cm" table-layout="fixed">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-top="0.5cm">
+<fo:block/>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:table background-color="rgb(245,218,129)" padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" width="19cm">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block keep-with-next="always" font-size="15px">Formation professionnelle</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell>
+<fo:block padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px"> </fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell>
+<fo:table width="19cm" table-layout="fixed">
+<fo:table-column column-width="2cm"/>
+<fo:table-column column-width="17cm"/>
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>2011</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Formation Spring – Valtech trainning</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>2008</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Formation “programmation avancée JAVA/J2EE – Atos Origin - Servlets, JSP, JavaBeans, MVC…</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+<fo:block>
+<fo:table width="19cm" table-layout="fixed">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-top="0.5cm">
+<fo:block/>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:table background-color="rgb(245,218,129)" padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px" width="19cm">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block keep-with-next="always" font-size="15px">Formation initiale</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell>
+<fo:block padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px"> </fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell>
+<fo:table width="19cm" table-layout="fixed">
+<fo:table-column column-width="2cm"/>
+<fo:table-column column-width="17cm"/>
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>2008</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Master Recherche 2 Information - Université de Bologne, Italie</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>2007</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Master Recherche 1 Informatique - Université Paris-Est Marne-la-Vallée</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>2005</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>MIAS</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>2001</fo:block>
+</fo:table-cell>
+<fo:table-cell padding-bottom="5px" padding-right="10px" padding-left="10px" padding-top="5px">
+<fo:block>Baccalauréat scientifique</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+<fo:block>
+<fo:table width="19cm" table-layout="fixed">
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell padding-top="0.5cm">
+<fo:block/>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+</fo:table>
+</fo:block>
+<fo:block id="last-block"/>
+</fo:flow>
+</fo:page-sequence>
+</fo:root>
