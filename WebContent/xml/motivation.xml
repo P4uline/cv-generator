@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<motivation>
+	<parameters>
+        <colors>
+            <skills>rgb(244,253,165)</skills>
+            <hobbies>rgb(239,202,163)</hobbies>
+            <exp>rgb(233,234,236)</exp>
+            <exp-tasks>rgb(243,243,244)</exp-tasks>
+            <studies>rgb(245,218,129)</studies>
+        </colors>
+        <taillePolice>
+            <big>18</big>
+            <medium>10</medium>
+            <small>6</small>
+        </taillePolice>
+        <bordureTableau>0.5pt solid black</bordureTableau>
+    </parameters>
+   	<candidat>
+   		<name>Pauline Iogna</name>
+   		<photo>../pictures.pauline-iogna.jpg</photo>
+		<email>pauline.iogna@gmail.com</email>
+ 		<tel>0623161214</tel>
+   	</candidat>
+		
+   	<title>Poste d'analyste java pour la Casden</title>
+
+	<paragraphes>
+		<paragraphe>Madame, Monsieurs</paragraphe>
+		<paragraphe>
+			Je vous recontacte, n'ayant pas eu de réponse. J'ai postulé sur le site de  banque populaire, mais ma candidature n'a peut-être pas été transmise.
+		</paragraphe>
+		<paragraphe>
+			Développeuse passionnée en java/j2ee depuis 2009, agiliste convaincue, je consacre une partie de mon temps à la veille technologique. Je participe régulièrement à des conférences en temps que spéctateur et speaker, ce qui me permet de rester à jour sur les nouvelles technologies, et d'approndir mes connaissances théoriques en préparant les présentations et les démos.
+			Je suis également enseignante à l'université de Marne-la-Vallée en programmation C et en algorithmique.
+		</paragraphe>
+		<paragraphe>
+			J'ai une grande expérience des projets java, ainsi que de nombreux frameworks open source tels que spring, hibernate, maven qui font partie intégrante de la stack java. J'ai travaillé pendent de nombreuses années sur des projets qui reposent sur des bases de données relationnelles comme oracle ou dbs, mais j'ai également de l'experience en NoSql avec mongodb. 
+			Mon optique étant d'apporter des améliorations pour faciliter la vie des dévloppeurs tout en améliorant la qualité et l'éfficacité des services.
+		</paragraphe>
+		<paragraphe>
+			J'espère sincermenet que mon profil vous intéressera et que nous pourrons nous rencontrer lors d'un entretien, ce serait un plaisir de pouvoir contribuer au développement de la Casden.
+		</paragraphe>
+		<paragraphe>
+			En espèrant que ma candidature vous intéresse,
+		</paragraphe>
+		<paragraphe>
+			Bien Cordialement,
+		</paragraphe>
+		<paragraphe>
+			Pauline Iogna.
+		</paragraphe>
+	</paragraphes>
+	
+</motivation>

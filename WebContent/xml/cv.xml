@@ -49,6 +49,8 @@
 		</content>
 		<content>
 			<category>Web</category>
+			<value>Html</value>
+			<value>Javascript</value>
 			<value>Css</value>
 			<value>JQuery</value>
 			<value>Angular</value>
@@ -112,28 +114,20 @@
 	<hobbies>
 		<title>Veille technologique et diverses activités</title>
 		<content>
-			<category>Participation speaker</category>
-			<value>Soirée scalabilité Duchess Jug</value>
-			<value>Devoxx France 2014</value>
-			<value>Human talks</value>
+			<category>Speaker</category>
+			<value>Soirée scalabilité Duchess Jug, Devoxx France 2014, Devoxx Belgique 2014, Human talks</value>
 		</content>
 		<content>
-			<category>Participation spéctateur</category>
-			<value>Paris Jug</value>
-			<value>Dot scale</value>
-			<value>Devoxx</value>
-			<value>Human talks</value>
-			<value>Duchess Jug</value>
-			<value>Hackergarten france</value>
+			<category>Conférences</category>
+			<value>Paris Jug, Dot scale, Devoxx, Human talks, Duchess Jug, Hackergarten france</value>
 		</content>
 		<content>
 			<category>Groupes</category>
-			<value>Mongodb User Group</value>
-			<value>Duchess France</value>
+			<value>Mongodb User Group, Duchess France</value>
 		</content>
 		<content>
 			<category>Développement</category>
-			<value>Génération du CV en PDF à partir de transformations xslt, Fop, Xsl-Fo</value>
+			<value>Divers projets sous github : cv-generator (xslt, Fop, Xsl-Fo), démos, contributions open-source</value>
 		</content>
 	</hobbies>
 		
