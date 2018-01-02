@@ -19,15 +19,25 @@
    		<name>Pauline Iogna</name>
    		<photo>../pictures.pauline-iogna.jpg</photo>
 		<email>pauline.iogna@gmail.com</email>
+		<twitter>@pauline_io</twitter>
  		<tel>0623161214</tel>
    	</candidat>
 		
    	<title>Ingénieur d'études et développement java/EE</title>
+   	
+   	<presentation>
+		<content>
+		Fière propriétaire d'un équidé : Gold Star Boreal par Goldfever, je partage mon temps entre le développement informatique, les conférences, les meetups techniques, l'université et les terrains de concours.
+		Agiliste convaincue, j'aime en particulier mettre l'accent sur l'amélioration continue des méthodes de travail, des compétences techniques et de la communication.
+		Mes sujets de prédilection concernent les problématiques côtés backend, et mon langage de coeur est le java, bien que je m'intéresse à d'autres technologies.
+		</content>
+   	</presentation>
 
 	<skillsTechnical>
 		<title>Compétences techniques</title>
 		<content>
 			<category>Langages</category>
+			<value>Java 8</value>
 			<value>Java/J2EE</value>
 			<value>Javascript</value>
 			<value>C</value>
@@ -35,17 +45,21 @@
 		</content>
 		<content>
 			<category>Bases de données relationelles</category>
+			<value>Postgresql</value>
 			<value>Oracle</value>
 			<value>Db2</value>
 			<value>Mysql</value>
 		</content>
 		<content>
 			<category>Frameworks</category>
+			<value>Springboot</value>
+			<value>Swagger</value>
+			<value>rabbitMQ</value>
+			<value>activiti</value>
 			<value>Maven</value>
 			<value>Hibernate</value>
 			<value>Spring</value>
 			<value>Rest easy</value>
-			<value>Struts 2</value>
 		</content>
 		<content>
 			<category>Web</category>
@@ -73,9 +87,16 @@
 			<value>MacOs</value>
 		</content>
 		<content>
-			<category>Méthodes</category>
+			<category>Méthodes agiles</category>
 			<value>Scrum</value>
 			<value>Kanban</value>
+			<value>Intégration continue</value>
+			<value>TDD</value>
+			<value>refactoring</value>
+			<value>Daily standup</value>
+			<value>Retrospectives</value>
+			<value>Amélioration continue</value>
+			<value>Grooming</value>
 		</content>
 		<content>
 			<category>Nosql</category>
@@ -83,22 +104,59 @@
 			<value>Aggregation pipeline</value>
 			<value>Map/Reduce</value>
 			<value>Jongo</value>
+			<value>Couchbase</value>
 		</content>
 		<content>
-			<category>Tests</category>
+			<category>Intégration continue</category>
+			<value>Jenkins</value>
+			<value>nexus</value>
+			<value>ansible</value>
+			<value>docker</value>
+		</content>
+		<content>
+			<category>Testing</category>
 			<value>Tests unitaires</value>
 			<value>Tests d'intégration</value>
+			<value>Tests end to end</value>
+			<value>Wiremock</value>
 			<value>Mockito</value>
 			<value>Fest assert</value>
 			<value>Junit</value>
 			<value>Testng</value>
+			<value>TDD</value>
+			<value>BDD</value>
+			<value>Tests paramétrés</value>
+		</content>
+		<content>
+			<category>Serveurs</category>
+			<value>Tomcat</value>
+			<value>Jboss</value>
 		</content>
 		<content>
 			<category>Architecture</category>
+			<value>Management d'apis : wso2</value>
+			<vlaue>Oauth2</vlaue>
 			<value>Rest</value>
 			<value>Guice</value>
 			<value>Proxy</value>
 			<value>Asynchronisation</value>
+			<value>Message Oriented Middleware</value>
+			<value>Business Process Management</value>
+			<value>Docker</value>
+			<value>Conception d'apis</value>
+			<value>Architecture hexagonale</value>
+			<value>DDD</value>
+		</content>
+		<content>
+			<category>Crafts(wo)manship</category>
+			<value>Testing</value>
+			<value>Clean code</value>
+			<value>Refactoring</value>
+			<value>Apprentissage continue</value>
+			<value>Katas</value>
+			<value>Coding dojos</value>
+			<value>Pair programming</value>
+			<value>Mob programming</value>
 		</content>
 	</skillsTechnical>
 
@@ -107,15 +165,19 @@
 		<skill-th-container>
 			<skill-th>Algorithmes de tri</skill-th>
 			<skill-th>Analyse de la compéxité du code source</skill-th>
-			<skill-th>Structure de données algorithmique</skill-th>
+			<skill-th>Structures de données algorithmique</skill-th>
 		</skill-th-container>
 	</skillsTheorical>
 	
 	<hobbies>
 		<title>Veille technologique et diverses activités</title>
 		<content>
+			<category>Meetup organizer</category>
+			<value>Duchess France, Code retreat</value>
+		</content>
+		<content>
 			<category>Speaker</category>
-			<value>Soirée scalabilité Duchess Jug, Devoxx France 2014, Devoxx Belgique 2014, Human talks</value>
+			<value>Duchess Jug, Devoxx France, Devoxx Belgique, Human talks, Jug summer camp</value>
 		</content>
 		<content>
 			<category>Conférences</category>
@@ -127,7 +189,12 @@
 		</content>
 		<content>
 			<category>Développement</category>
-			<value>Divers projets sous github : cv-generator (xslt, Fop, Xsl-Fo), démos, contributions open-source</value>
+			<value>Divers projets sous github p4uline : webhook dialogflow, katas, cv-generator (xslt, Fop, Xsl-Fo), démos, contributions open-source sur fest-assert</value>
+		</content>
+		<content>
+			<category>Equitation</category>
+			<value>CSO</value>
+			<value>Dressage</value>
 		</content>
 	</hobbies>
 		
@@ -140,12 +207,95 @@
 			</duration>
 			<where>UPEM</where>
 			<what>Enseignant vacataire à l'université</what>
-			<presentation>Encadrement d'un TD d'algorithmique pour les étudiants en 1ère année de licence Mathématiques et Informatique ainsi qu'un TP de programmation C pour les étudiants en 2ème année.</presentation>
+			<presentation>Encadrement de TD et TP d'algorithmique, de programmation C, de programmation objet et de java avancé.</presentation>
 		</experience>
 		<experience>
 			<duration>
-				<from>Janv 2012</from>
+				<from>Décembre 2016</from>
 				<to>à auj.</to>
+			</duration>
+			<where>Casden</where>
+			<what>Analyste en architecture</what>
+			<presentation>
+				Développement d'un poc de chatbot avec api.ai, mise en place de l'intégration continue et tests unitaires, conseil en architecture sur les projets java
+		    </presentation>
+		    <tasks>
+		    	<task>Migration de couchbase à postgresql des applications</task>
+		    	<task>Développement transverses</task>
+		    	<task>Conseil en architecture auprès des équipes de développement</task>
+		    	<task>Conception et développement d'apis</task>
+		    	<task>POC dialogflow (api.ai)</task>
+		    	<task>POC image docker pour nexus</task>
+	        	<task>Animation de katas hébdomadaires</task>
+	        	<task>Craft coaching auprès des équipes</task>
+	        	<task>Définition du socle technique pour les tests</task>
+	        	<task>Evangélisation du socle techniques</task>
+		    	<task>Formation aux tests unitaires des équipes de développement</task>
+				<task>Tests unitaires, tests d'intégration, mocks http</task>
+				<task>Refactoring</task>
+				<task>Revues de code</task>
+				<task>Cérémonies agiles (daily scrum, retrospctives, démos, grooming...)</task>
+				<task>Définition des roadmap pour l'architecture du SI</task>
+				<task>Réalisation de vhosts sur les frontaux apaches</task>
+		    </tasks>
+		    <skills>
+		        <value>wso2</value>
+		    	<value>kata</value>
+		    	<value>refactoring</value>
+		    	<value>pair-programming</value>
+		    	<value>Java 7</value>
+		    	<value>Java 8</value>
+		    	<value>Java/J2EE</value>
+		    	<value>Sprintboot</value>
+		    	<value>Junit</value>
+		    	<value>Mockito</value>
+		    	<value>AssertJ</value>
+		    	<value>Jenkins</value>
+		    	<value>Docker</value>
+		    	<value>Apache, vhosts</value>
+		    </skills>
+		</experience>
+		
+		<experience>
+			<duration>
+				<from>Mai 2015</from>
+				<to>- Déc. 2016</to>
+			</duration>
+			<where>Casden</where>
+			<what>Tech lead et Développeuse</what>
+			<presentation>
+				Encadrement technique des équipes, mise en place de deux nouvelles briques techniques : mom et bpm.
+		    </presentation>
+		    <tasks>
+		    	<task>Développement java de consumer et producer rabbitMQ</task>
+	        	<task>Conception et mise en oeuvre d'un processsus de suivis de demande de prêt</task>
+				<task>Tests unitaireset tests d'intégration</task>
+				<task>Mise en place de bonnes pratiques de gestion des branches</task>
+				<task>Refactoring</task>
+				<task>Revues de code</task>
+				<task>Sensibilisation aux tests auprès des équipes</task>
+				<task>Cérémonies agiles (daily scrum, retrospctives, ...)</task>
+		    </tasks>
+		    <skills>
+		    	<value>RabbitMQ</value>
+		    	<value>Activiti bpm</value>
+		    	<value>Java/J2EE</value>
+		    	<value>REST</value>
+		    	<value>Cdi</value>
+		    	<value>Deltaspike</value>
+		    	<value>Angular</value>
+		    	<value>Couchbase</value>
+		    	<value>Mysql</value>
+		    	<value>Junit</value>
+		    	<value>Mockito</value>
+		    	<value>AssertJ</value>
+		    </skills>
+		</experience>
+		
+		<experience>
+			<duration>
+				<from>Janv 2012</from>
+				<to>- Avril 2016</to>
 			</duration>
 			<where>Connecthings</where>
 			<what>Ingénieur d'études et développement</what>
@@ -180,7 +330,7 @@
 		    	<value>Junit</value>
 		    	<value>Testng</value>
 		    	<value>Mockito</value>
-		    	<value>Fest assert</value>
+		    	<value>Assertj</value>
 		    	<value>Quartz scheduler</value>
 		    </skills>
 		</experience>

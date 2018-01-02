@@ -29,6 +29,8 @@
                     <xsl:call-template name="emptyTable"/>
                     <xsl:call-template name="title"/>
                     <xsl:call-template name="emptyTable"/>
+                    <xsl:call-template name="presentation"/>
+                    <xsl:call-template name="emptyTable"/>
                     <xsl:call-template name="skills"/>
                     <xsl:call-template name="emptyTable"/>
                     <xsl:call-template name="hobbies"/>
@@ -124,6 +126,7 @@
         	<fo:block><xsl:value-of select="normalize-space($fichier-configuration/cv/candidat/name)"/></fo:block>
         	<fo:block><xsl:value-of select="normalize-space($fichier-configuration/cv/candidat/address)"/></fo:block>
         	<fo:block><xsl:value-of select="normalize-space($fichier-configuration/cv/candidat/email)"/></fo:block>
+        	<fo:block><xsl:value-of select="normalize-space($fichier-configuration/cv/candidat/twitter)"/></fo:block>
         	<fo:block><xsl:value-of select="normalize-space($fichier-configuration/cv/candidat/tel)"/></fo:block>
         </fo:block>
     </xsl:template>
@@ -135,6 +138,26 @@
                font-size="{normalize-space($fichier-configuration/cv/parameters/taillePolice/big)}pt"
                font-weight="bold">
         	<fo:inline text-transform="uppercase"><xsl:value-of select="./cv/title"/></fo:inline>
+        </fo:block>
+    </xsl:template>
+    
+    <xsl:template name="presentation">
+    	<fo:block>
+            <fo:table table-layout="fixed" width="{$width-body}cm" 
+            	background-color="{normalize-space($fichier-configuration/cv/parameters/colors/studies)}">
+            	<fo:table-column column-width="19cm"/>
+                <fo:table-body>
+                	<fo:table-row font-size="10px">
+				        <fo:table-cell text-align="left"
+				            display-align="auto"
+				            padding-top="5px" padding-left="10px" padding-right="10px" padding-bottom="5px">
+				            <fo:block>
+	                    		<xsl:value-of select="./cv/presentation/content"/>
+				            </fo:block>
+				        </fo:table-cell>
+			        </fo:table-row>
+                </fo:table-body>
+            </fo:table>
         </fo:block>
     </xsl:template>
     
